@@ -42,4 +42,9 @@ public class EventoController {
         return this.eventoCrudService.getEvento (id);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteEvento(@PathVariable Long id) {
+        this.eventoCrudService.deleteEvento (id);
+    }
+
 }

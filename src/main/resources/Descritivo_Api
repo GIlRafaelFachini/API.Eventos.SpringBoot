@@ -1,0 +1,37 @@
+Teste para desenvolvedores:
+Escopo
+Criar uma API REST para a gestão de eventos de uma determinada agência de shows
+
+Requisitos de negócio
+A API deve contemplar o CRUD básico de cada evento
+Criar evento
+Buscar todos os eventos
+Buscar evento pelo identificador
+Editar evento pelo identificador
+Excluir evento pelo identificador
+
+Cada evento deve conter os campos a seguir:
+Nome do evento
+Nome do patrocinador
+Data do evento
+Data de criação
+Local
+Nome do Artista
+Horário de início
+Duração
+lotação máxima
+
+A Api deve respeitar as seguntes validações
+O Nome do evento deve ter entre 5 e 30 carácteres
+O Nome do patrocinador deve ter entre 5 e 30 carácteres
+A Data do evento não pode ser inferior a data de criação
+O nome do artista deve ter entre 5 e 30 carácteres
+A Duração máxima do evento não pode exceder 5h
+No processo de edição de um evento, não deve ser possível editar a data de criação nem o nome do evento
+Requessitos técnicos
+A Aplicação deve ser criada em java/Springboot
+Git (deverá ser hospedado em um repositório público: github, gitlab ou bitbucket)
+Pode ser utilizado banco de dados em memória
+Utilizar JPA/Hibernate
+Não é necessário autenticação
+Documentar a api com OPEN API (swagger)
